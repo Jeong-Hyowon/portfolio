@@ -2,6 +2,7 @@
 ul{list-style:none;}
 .typing ul li{
   display:block;
+  color: rgb(236, 236, 91);
 }
 .typing ul li.on {  
   display: inline-block; 
