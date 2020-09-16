@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jeong-Hyowon</title>
+
+    <!-- load CSS -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">  Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                  
+    <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">                
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>                      
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                               
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
+    
+</head>
+
+<body>
+  <div id="tm-bg"><video muted autoplay loop>
+    <source src="videos/Network2.mp4" type="video/mp4">
+  </video></div>
+  <div id="tm-wrap">
+      <div class="tm-main-content">
+        <ul>
+        <li><a href="https://jeong-hyowon.github.io/portfolio/" style="color: darkgray;">main</a></li>
+        <li><a href="https://jeong-hyowon.github.io/portfolio/activity" style="color: darkgray;">activity</a></li>
+        <li><a href="https://jeong-hyowon.github.io/portfolio/project" style="color: darkgray;">project</a></li>
+      </ul>
+      <div class="container tm-site-header-container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-md-col-xl-6 mb-md-0 mb-sm-4 mb-4 tm-site-header-col">
+                <div class="tm-site-header">
+                    <h1 class="mb-4" style="color: rgb(154, 201, 240);">Intern </h1>
+                    <p style="color: rgb(203, 229, 250);">2020.09~ 2020.12</p>                    </div>
+                    </div>
+                  
+                  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                      <div class="content">
+                        <h1 style="color: steelblue;">I am doing</h1>
+                        <br>
+                            IoT 모바일 앱 개발
+                            <ul style="color: darkgray;">
+                            <li>Android</li>
+                            <li>MQTT</li>
+                            <li>NodeJS</li>
+                            <li>MySQL</li>
+                            <li>Arduino</li>
+                          </ul>
+                          <br>
+                          시계열 인공지능 구현
+                  </div>
+              </div>
+                              
+          </div>
+          
+      </div> <!-- .tm-main-content -->  
+  </div>
+</body>
+    <!-- load JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>         <!-- https://jquery.com/ -->    
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->  
+    <script src="js/anime.min.js"></script>                     <!-- http://animejs.com/ -->
+    <script src="js/main.js"></script>  
+    <script src="js/typing.js"></script>  
+    <script>      
+
+        function setupFooter() {
+            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
+
+            var main = $('.tm-main-content');
+
+            if($(window).height() < pageHeight) {
+                main.addClass('tm-footer-relative');
+            }
+            else {
+                main.removeClass('tm-footer-relative');   
+            }
+        }
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            setupFooter();
+
+            $(window).resize(function(){
+                setupFooter();
+            });
+
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>
